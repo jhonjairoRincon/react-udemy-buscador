@@ -32,9 +32,11 @@ export default function SearchBox({onSearch , onClose}) {
                         />
                     </label>
                     {/* al dar click se llama al evento que se recibe por parametro */}
-                    <button onClick={handleCloseClick} disabled={!searchText.length}>Buscar</button>
+                    <button onClick={handleCloseClick} 
+                    disabled={!searchText.length}>Buscar</button>
                     {/* creamos una funcion que limpie el input y ademas llame al onClose */}
-                    <button className={` ${CloseHidden ? 'botton-hidden' : 'close'}`} onClick={handleSearchClick}>Cerrar</button>
+                    <button className={` ${CloseHidden ? 'botton-hidden' : 'close'}`} 
+                            onClick={handleSearchClick}>Cerrar</button>
                 </div>
                 
             </div>
